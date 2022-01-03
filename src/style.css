@@ -1,0 +1,93 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0)),
+    url('./image/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s;
+}
+
+.main{
+    width: 350px;
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.form-input{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff;
+    padding: 20px 0;
+    border-radius: 12px 12px 0 0;
+    border-bottom: 2px solid #52AD7C;
+    transition: all 0.3s;
+}
+
+.job-input{
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    font-size: 20px;
+}
+
+.add-btn{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 8px;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #52AD7C;
+    opacity: 0.8;
+}
+
+.add-btn:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.list-job{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0 0 12px 12px;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.list-job li{
+    padding: 16px;
+    border-top: 0.5px solid #C3BB8A;
+    word-wrap: break-word;
+    display: flex;
+    justify-content: space-between;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.list-job li i{
+    display: none;
+}
+
+.list-job li:hover{
+    opacity: 0.8;
+}
+.list-job li:hover i{
+    display: block;
+    color: #da330e;
+}
+
+.finish p{
+    text-decoration: line-through;
+}
