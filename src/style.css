@@ -7,49 +7,45 @@
 }
 
 .App{
-    height: 100vh;
+    min-height: 100vh;
     background-image: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0)),
     url('./image/bg.jpg');
     background-size: cover;
     background-position: center;
-    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
 }
 
 .main{
-    width: 350px;
-    position: relative;
-    top: 25%;
-    left: 50%;
-    transform: translateX(-50%);
-    overflow: hidden;
-    transition: all 0.3s;
+    width: 600px;
+    margin: 10% auto;
 }
 
 .form-input{
     display: flex;
     justify-content: space-evenly;
     background-color: #fff;
-    padding: 20px 0;
-    border-radius: 12px 12px 0 0;
-    border-bottom: 2px solid #52AD7C;
-    transition: all 0.3s;
+    padding: 16px 8px;
+    border-radius: 12px 12px 8px 8px;
+    border-bottom: 4px solid #52AD7C;
 }
 
 .job-input{
+    width: 80%;
     border: none;
     outline: none;
-    padding: 8px 12px;
-    font-size: 20px;
+    padding: 8px;
+    font-size: 28px;
 }
 
 .add-btn{
     border: none;
     outline: none;
     font-size: 20px;
-    padding: 8px;
+    padding: 8px 32px;
     color: #fff;
     border-radius: 4px;
-    background-color: #52AD7C;
+    background-color: #0db35a;
     opacity: 0.8;
 }
 
@@ -60,34 +56,47 @@
 
 .list-job{
     width: 100%;
+    max-height: 500px;
+    overflow: auto;
     background-color: #fff;
     border-radius: 0 0 12px 12px;
-    font-size: 20px;
-    transition: all 0.3s;
+    font-size: 24px;
 }
 
 .list-job li{
     padding: 16px;
     border-top: 0.5px solid #C3BB8A;
-    word-wrap: break-word;
     display: flex;
     justify-content: space-between;
-    line-height: 20px;
+    align-items: center;
+    line-height: 24px;
     cursor: pointer;
+}
+
+.list-job li p{
+    max-width: 90%;
+    word-wrap: break-word;
 }
 
 .list-job li i{
     display: none;
 }
 
-.list-job li:hover{
-    opacity: 0.8;
-}
 .list-job li:hover i{
     display: block;
     color: #da330e;
 }
 
 .finish p{
+    color: #8c8c8c;
     text-decoration: line-through;
+}
+
+@media only screen and (max-width: 768px){
+    .main{
+        width: 350px;
+    }
+    .job-input{
+        font-size: 24px;
+    }
 }
