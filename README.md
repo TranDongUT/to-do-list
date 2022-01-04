@@ -11,4 +11,4 @@ Deploy React-app to git
 ![desk](https://user-images.githubusercontent.com/84276205/148079531-91e36f1e-8230-4ffe-8bec-b7cbfd138e1c.jpg)
 
 ## Demo Mobile
-![mobile](https://user-images.githubusercontent.com/84276205/148079592-d5f89eab-2d4d-4db0-bbf1-110a96f2ac0a.jpg)
+![mobile](https://user-images.githubusercontent.com/84276205/148079895-aad07494-658b-46dc-9f2b-8e7fe490db1e.jpg)
